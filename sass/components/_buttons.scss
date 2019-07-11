@@ -1,0 +1,23 @@
+#button-link {
+    text-decoration: none;
+
+    .message-button {
+        background-color: $color-black-font;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.5rem;
+        width: 18rem;
+        height: 4.2rem;
+        border-radius: 25px;
+        padding: 1rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+        cursor: pointer;
+
+        @media screen and (max-width: $break-mobile){
+            width: 100%;
+        }
+    }
+}

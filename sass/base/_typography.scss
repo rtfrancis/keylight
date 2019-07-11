@@ -1,0 +1,93 @@
+//non heading text
+.gen-text {
+    color: $color-black-font;
+    font-size: 1.4rem;
+    padding: 2rem;
+    font-weight: 400;
+
+    a {
+        color: $color-black-font;
+        padding-top: 30px;
+    }
+}
+
+//all section headings
+.heading {
+    @include headers;
+}
+
+//text in intro section
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 13rem;
+
+    &--name {
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 3rem;
+        font-weight: 600;
+
+        @media screen and (max-width: $break-mobile){
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &--title {
+        margin-top: 6.5rem;
+        font-size: 1.1rem;
+        text-align: left;
+
+        @media screen and (max-width: $break-mobile){
+            margin-top: 1rem;
+            margin-bottom: 100rem;
+        }
+    }
+
+    &--languages {
+        justify-content: center;
+        align-items: flex-end;
+        align-self: center;
+        transform: rotate(270deg);
+        margin-right: -1.8rem;
+
+
+        :hover {
+            cursor: pointer;
+        }
+
+        p {
+            letter-spacing: .1rem;
+
+            a {
+                color: $color-black-font;
+                text-decoration: none;
+            }
+        }
+
+        &--ru {
+            color: $color-grey-font;
+
+        }
+
+        &--eng {
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: $break-mobile){
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $break-mobile){
+        flex-direction: column;
+        text-align: left;
+        height: 200px;
+    }
+}
+
+.like-text {
+    color: $color-grey-font;
+    font-size: 1.3rem;
+}

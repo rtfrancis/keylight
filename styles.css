@@ -1,0 +1,189 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; }
+
+.gen-text {
+  color: #070707;
+  font-size: 1.4rem;
+  padding: 2rem;
+  font-weight: 400; }
+  .gen-text a {
+    color: #070707;
+    padding-top: 30px; }
+
+.heading {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 4.2rem;
+  margin-bottom: 2rem; }
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 13rem; }
+  .main--name {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 600; }
+    @media screen and (max-width: 375px) {
+      .main--name {
+        margin-bottom: 1.5rem; } }
+  .main--title {
+    margin-top: 6.5rem;
+    font-size: 1.1rem;
+    text-align: left; }
+    @media screen and (max-width: 375px) {
+      .main--title {
+        margin-top: 1rem;
+        margin-bottom: 100rem; } }
+  .main--languages {
+    justify-content: center;
+    align-items: flex-end;
+    align-self: center;
+    transform: rotate(270deg);
+    margin-right: -1.8rem; }
+    .main--languages :hover {
+      cursor: pointer; }
+    .main--languages p {
+      letter-spacing: .1rem; }
+      .main--languages p a {
+        color: #070707;
+        text-decoration: none; }
+    .main--languages--ru {
+      color: #828282; }
+    .main--languages--eng {
+      font-weight: bold; }
+    @media screen and (max-width: 375px) {
+      .main--languages {
+        display: none; } }
+  @media screen and (max-width: 375px) {
+    .main {
+      flex-direction: column;
+      text-align: left;
+      height: 200px; } }
+
+.like-text {
+  color: #828282;
+  font-size: 1.3rem; }
+
+#button-link {
+  text-decoration: none; }
+  #button-link .message-button {
+    background-color: #070707;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 18rem;
+    height: 4.2rem;
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    cursor: pointer; }
+    @media screen and (max-width: 375px) {
+      #button-link .message-button {
+        width: 100%; } }
+
+.nav-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #828282; }
+  .nav-bar--item {
+    margin-bottom: 2.5rem; }
+    .nav-bar--item a {
+      text-decoration: none;
+      color: #828282;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.2rem; }
+    .nav-bar--item--home {
+      color: black !important;
+      font-weight: 600 !important; }
+  @media screen and (max-width: 375px) {
+    .nav-bar {
+      display: none; } }
+
+.icons-container {
+  width: 50%;
+  max-width: 500px;
+  margin: 4rem auto;
+  display: flex; }
+  .icons-container img:hover {
+    cursor: pointer; }
+  @media screen and (max-width: 375px) {
+    .icons-container {
+      width: 100%;
+      margin-bottom: 6rem; } }
+
+.designer-photo .img--main {
+  width: 100%; }
+  @media screen and (max-width: 375px) {
+    .designer-photo .img--main {
+      display: none; } }
+
+.designer-photo .img--mobile {
+  display: none;
+  width: 100%; }
+  @media screen and (max-width: 375px) {
+    .designer-photo .img--mobile {
+      display: block; } }
+
+.skill-imgs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px; }
+  .skill-imgs img {
+    margin-bottom: 2rem; }
+  @media screen and (max-width: 375px) {
+    .skill-imgs {
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .skill-imgs img {
+        display: block;
+        margin-bottom: 6rem; } }
+
+img {
+  display: block;
+  margin: 0 auto; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  object-fit: fill;
+  padding: 7rem; }
+  @media screen and (max-width: 375px) {
+    .container {
+      width: 100%;
+      padding: 7rem 2rem; } }
+
+#first-container {
+  padding-top: 2rem; }
+
+.portfo-container {
+  width: 100%;
+  padding-top: 5rem; }
+  .portfo-container img {
+    width: 100%;
+    margin-bottom: 2rem; }
+
+.about, .portfolio {
+  background-color: #F6F6F6; }

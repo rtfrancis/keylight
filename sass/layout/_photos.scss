@@ -1,0 +1,61 @@
+.icons-container {
+    width: 50%;
+    max-width: 500px;
+    margin: 4rem auto;
+    display: flex;
+
+    img:hover {
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: $break-mobile){
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+}
+
+.designer-photo {
+    .img--main {
+        width: 100%;
+
+        @media screen and (max-width: $break-mobile){
+            display: none;
+        }
+    }
+
+    .img--mobile {
+        display: none;
+        width: 100%;
+
+        @media screen and (max-width: $break-mobile){
+            display:block;
+        }
+    }
+}
+
+.skill-imgs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    img {
+        margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: $break-mobile){
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        img {
+            display: block;
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

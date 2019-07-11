@@ -1,0 +1,29 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    object-fit: fill;
+    padding: 7rem;
+
+    @media screen and (max-width: $break-mobile){
+        width: 100%;
+        padding: 7rem 2rem;
+    }
+}
+
+#first-container {
+    padding-top: 2rem;
+}
+
+.portfo-container {
+    width: 100%;
+    padding-top: 5rem;
+
+    img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.about, .portfolio {
+    background-color: $color-grey-background;
+}
